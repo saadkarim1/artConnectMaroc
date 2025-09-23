@@ -1,0 +1,10 @@
+{
+	"users": [
+		{ "id": 1, "name": "Saad", "age": 25 },
+		{ "id": 2, "name": "Karim", "age": 30 }
+	],
+	"tasks": [
+		{ "id": 1, "title": "Coding", "completed": true },
+		{ "id": 2, "title": "Sport", "completed": false }
+	]
+}
