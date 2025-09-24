@@ -7,7 +7,7 @@ const Publish = () => {
 
 
 
-<div className="flex flex-col items-center justify-center min-h-screen bg-[#e6cfa9] px-6">
+<div className="flex flex-col items-center justify-center min-h-screen px-6">
       <div className="w-full max-w-4xl bg-[#fafafa] rounded-2xl shadow-xl border border-[#d8b98c] p-10">
 
         {/* Header */}
