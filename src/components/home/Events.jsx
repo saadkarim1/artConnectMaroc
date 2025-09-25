@@ -27,13 +27,13 @@ const Events = () => {
 				{events.map((item, index) => (
 					<div
 						key={index}
-						className='w-[31%] bg-[#FAF6F0]  rounded-2xl border-2 border-[#D3662E] overflow-hidden text-center'
+						className='w-[31%] p-2 bg-[#fff]  rounded-2xl border-2 border-[#D3662E] overflow-hidden text-center'
 					>
-						<img src={item.img} alt='' className='w-full h-50' />
+						<img src={item.img} alt='' className='w-full h-50 rounded-xl' />
 						<div className='font-bold text-[#652B15] text-lg my-1'>
 							{item.title}
 						</div>
-						<div className='my-1 text-[#D3662E] text-sm  w-[80%] mx-auto text-center '>
+						<div className='my-1 text-[#D3662E] text-md  w-[80%] mx-auto text-center '>
 							{item.description}
 						</div>
 					</div>
