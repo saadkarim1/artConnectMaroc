@@ -1,10 +1,82 @@
 {
-	"users": [
-		{ "id": 1, "name": "Saad", "age": 25 },
-		{ "id": 2, "name": "Karim", "age": 30 }
-	],
-	"tasks": [
-		{ "id": 1, "title": "Coding", "completed": true },
-		{ "id": 2, "title": "Sport", "completed": false }
-	]
+  "users": [
+    {
+      "id": "1",
+      "name": "Saad",
+      "age": 25
+    },
+    {
+      "id": "2",
+      "name": "Karim",
+      "age": 30
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Coding",
+      "completed": true
+    },
+    {
+      "id": "2",
+      "title": "Sport",
+      "completed": false
+    }
+  ],
+  "posts": [
+    {
+      "id": "d75a",
+      "title": "jjj",
+      "category": "Gastronomy",
+      "region": "jj"
+    },
+    {
+      "id": "b493",
+      "title": "jj",
+      "category": "Crafts",
+      "region": "bbbb"
+    },
+    {
+      "id": "b2d9",
+      "title": "jjjj",
+      "category": "Gastronomy",
+      "region": "hhh"
+    },
+    {
+      "id": "18c5",
+      "title": "kkk",
+      "category": "Crafts",
+      "region": "kk"
+    },
+    {
+      "id": "da62",
+      "title": ",jj",
+      "category": "Clothing",
+      "region": "jj"
+    },
+    {
+      "id": "458d",
+      "title": "jjjj",
+      "category": "Gastronomy",
+      "region": "jjj"
+    },
+    {
+      "id": "7d02",
+      "title": "hhhh",
+      "category": "Ceramek",
+      "region": "jjjj"
+    },
+    {
+      "id": "529b",
+      "title": "tapis ",
+      "category": "Tapis",
+      "region": "agadir"
+    },
+    {
+      "id": "e741",
+      "title": "kkk",
+      "category": "Ceramek",
+      "region": "kkk"
+    }
+  ]
 }
