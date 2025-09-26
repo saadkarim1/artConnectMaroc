@@ -21,7 +21,7 @@ const events = [
 ];
 const Events = () => {
 	return (
-		<section className='px-16 my-4'>
+		<section >
 			<SectionTitle title={"Events"} />
 			<div className='flex items-center justify-between'>
 				{events.map((item, index) => (

@@ -4,15 +4,14 @@ import { IoHeartOutline, IoHeart } from "react-icons/io5";
 
 const items = [1, 2, 3, 4, 5];
 const LatestAdditions = () => {
-    
 	return (
-		<section className=' px-16 my-4'>
+		<section>
 			<SectionTitle title={"Latest Additions"} />
 			<div className='flex items-center justify-between'>
 				{items.map((item) => (
 					<div
 						key={item}
-						className='w-[18%] p-2 bg-[#fff]  rounded-2xl border-2 border-[#D3662E] overflow-hidden'
+						className='w-[19%] p-2 bg-[#fff]  rounded-2xl border-2 border-[#D3662E] overflow-hidden'
 					>
 						<img
 							src='src/assets/Mosaico.jpeg'

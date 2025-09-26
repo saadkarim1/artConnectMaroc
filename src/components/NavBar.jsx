@@ -15,7 +15,7 @@ const NavBar = () => {
 	return (
 		// <div className="blur-lg">
 
-		<nav className='sticky  backdrop-blur-lg bg-[#FAF6F0]/85 z-50 top-0 flex items-center justify-evenly px-16'>
+		<nav className='sticky  backdrop-blur-lg bg-[#FAF6F0]/50 z-50 top-0 flex items-center justify-evenly px-18'>
 			<div className='w-[33%]'>
 				{/* <img src='src/assets/image.png' alt='' className='w-[60px] h-[40px] ' /> */}
 				<h1 className='font-extrabold text-2xl'>ArtConnect Morroco</h1>
@@ -40,12 +40,12 @@ const NavBar = () => {
 				))}
 			</ul>
 			<div className='w-[33%] flex items-center justify-end space-x-2'>
-				<div className='group p-1.5 rounded-full flex  bg-[#f5f5f5]  text-xl cursor-pointer border-2 border-[#4C2010]'>
+				<div className='group p-1.5 rounded-full flex  bg-[#fff]  text-xl cursor-pointer border-2 border-[#4C2010]'>
 					<FaSearch />
 				</div>
 				<Link
 					to={"/admin"}
-					className='bg-[#f5f5f5] py-1 px-3 rounded-md border-2 border-[#4C2010] flex items-center space-x-1.5 cursor-pointer'
+					className='bg-[#fff] py-1 px-3 rounded-md border-2 border-[#4C2010] flex items-center space-x-1.5 cursor-pointer'
 				>
 					<FaUser /> <span className='capitalize font-medium'>admin</span>
 				</Link>

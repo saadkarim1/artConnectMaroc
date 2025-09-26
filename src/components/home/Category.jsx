@@ -10,8 +10,8 @@ const categories = [
 const Category = () => {
 	return (
 		<section
-			className='bg-cover bg-center px-16 my-4'
-			style={{ backgroundImage: `url(/src/assets/zakhrafa.png)` }}
+			className='bg-cover bg-center'
+			// style={{ backgroundImage: `url(/src/assets/zakhrafa.png)` }}
 		>
 			<SectionTitle title={"Categories"} />
 			<div className='flex items-center justify-between'>

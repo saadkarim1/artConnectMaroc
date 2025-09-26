@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle";
 
 const ArtisanOfTheMonth = () => {
 	return (
-		<section className='px-16 my-4'>
+		<section>
 			<SectionTitle title={"Artisan of the month"} />
 			<div className='w-full  flex items-center flex-col justify-center'>
 				<div className='w-40 h-40 rounded-full border-3 border-[#D3662E]'></div>
