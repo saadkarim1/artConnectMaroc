@@ -1,10 +1,153 @@
 {
-	"users": [
-		{ "id": 1, "name": "Saad", "age": 25 },
-		{ "id": 2, "name": "Karim", "age": 30 }
-	],
-	"tasks": [
-		{ "id": 1, "title": "Coding", "completed": true },
-		{ "id": 2, "title": "Sport", "completed": false }
-	]
+  "artisans": [
+    {
+      "id": "1",
+      "name": "Saad"
+    },
+    {
+      "id": "2",
+      "name": "Karim"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "title": "carpets"
+    },
+    {
+      "id": "2",
+      "title": "zellige"
+    },
+    {
+      "id": "3",
+      "title": "ceramic"
+    },
+    {
+      "id": "4",
+      "title": "crafts"
+    }
+  ],
+  "events": [
+    {
+      "id": "1",
+      "title": "Gnaoua Festival",
+      "description": "In Essaouira, mixing Gnaoua and world music together."
+    },
+    {
+      "id": "2",
+      "title": "Maison de l’Artisan",
+      "description": "Events that promote Moroccan crafts and local artisans."
+    },
+    {
+      "id": "3",
+      "title": "Mawazine Festival",
+      "description": "A huge festival in Rabat with world stars and Moroccan music."
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "jjj",
+      "categoryId": 1,
+      "region": "casablanca",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "2",
+      "title": "jjj",
+      "categoryId": 1,
+      "region": "casablanca",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "3",
+      "title": "jjj",
+      "categoryId": 1,
+      "region": "casablanca",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "4",
+      "title": "jjj",
+      "categoryId": 1,
+      "region": "casablanca",
+      "favorite": true,
+      "artisanId": 1
+    },
+    {
+      "id": "5",
+      "title": "jjj",
+      "categoryId": 1,
+      "region": "casablanca",
+      "favorite": true,
+      "artisanId": 1
+    },
+    {
+      "id": "6",
+      "title": "ceramic",
+      "category": "3",
+      "region": "settat",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "7",
+      "title": "ceramic",
+      "category": "2",
+      "region": "tawjtate",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "8",
+      "title": "houda",
+      "category": "3",
+      "region": "dfkjh",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "9",
+      "title": "saad",
+      "category": "2",
+      "region": "fddsfd",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "10",
+      "title": "latifa",
+      "category": "1",
+      "region": "dkfjd",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "11",
+      "title": "ayoub",
+      "category": "1",
+      "region": "kjhjk",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "12",
+      "title": "hafssa",
+      "category": "2",
+      "region": "io",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "13",
+      "title": "no3man",
+      "category": "3",
+      "region": "dfjkld",
+      "favorite": true,
+      "artisanId": 1
+    }
+  ]
 }
