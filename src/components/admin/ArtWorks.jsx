@@ -1,25 +1,17 @@
 import React, { useContext } from "react";
-import SectionTitle from "./SectionTitle";
 import { IoHeartOutline, IoHeart } from "react-icons/io5";
 import { PostsContext } from "../../contexes/postsContex";
 
-const LatestAdditions = () => {
-	const { posts, setPosts, addOrRemoveFavorite } = useContext(PostsContext);
+const ArtWorks = () => {
+	const { posts, addOrRemoveFavorite } = useContext(PostsContext);
 
-	const latestFivePosts = () => {
-		let latestPosts = [];
-		for (let i = posts?.length - 1; i > 0; i--) {
-			latestPosts.push(posts[i]);
-			if (latestPosts.length == 5) {
-				break;
-			}
-		}
-		return latestPosts;
-	};
+	let artWorks = posts;
+	artWorks = artWorks?.reverse();
+
 	return (
 		<section>
-			<div className='flex items-center justify-between'>
-				{latestFivePosts()?.map((post) => (
+			<div className='flex items-center justify-between flex-wrap gap-3'>
+				{artWorks?.map((post) => (
 					<div
 						key={post.id}
 						className='w-[19%] p-2 bg-[#fff]  rounded-2xl border-2 border-amber-600 overflow-hidden'
@@ -57,4 +49,4 @@ const LatestAdditions = () => {
 	);
 };
 
-export default LatestAdditions;
+export default ArtWorks;

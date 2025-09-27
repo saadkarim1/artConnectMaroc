@@ -24,7 +24,7 @@ const Events = () => {
 	const { events } = useContext(EventsContext);
 	return (
 		<section>
-			<SectionTitle title={"Events"} />
+			
 			<div className='flex items-center justify-between'>
 				{events?.map((item, index) => (
 					<div
@@ -39,7 +39,7 @@ const Events = () => {
 						<div className='font-bold text-[#652B15] text-lg my-1'>
 							{item.title}
 						</div>
-						<div className='my-1 text-[#D3662E] text-md  w-[80%] mx-auto text-center '>
+						<div className='my-1 text-[#D3662E] text-md font-medium w-[80%] mx-auto text-center '>
 							{item.description}
 						</div>
 					</div>

@@ -5,15 +5,18 @@ import Events from "../components/home/Events";
 import ArtisanOfTheMonth from "../components/home/ArtisanOfTheMonth";
 import InfoSection from "../components/home/InfoSection";
 import { PostsContext } from "../contexes/postsContex";
+import SectionTitle from "../components/home/SectionTitle";
 
 const Home = () => {
-	
 	return (
 		<>
 			<section className='flex flex-col space-y-10 my-10 '>
 				<InfoSection />
+				<SectionTitle title={"Categories"} />
 				<Category />
+				<SectionTitle title={"Latest Additions"} />
 				<LatestAdditions />
+				<SectionTitle title={"Events"} />
 				<Events />
 				<ArtisanOfTheMonth />
 			</section>

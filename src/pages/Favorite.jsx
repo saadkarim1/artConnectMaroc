@@ -17,7 +17,7 @@ const Favorite = () => {
 				</div>
 
 				{/* Liste des cartes */}
-				<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 place-items-center'>
+				<div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4'>
 					{/* Carte */}
 
 					{favoritePosts?.map((post) => (
