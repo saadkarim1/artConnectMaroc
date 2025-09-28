@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import axios from "axios";
 import { CategoriesContext } from "../contexes/categoriesContext";
 import { PostsContext } from "../contexes/postsContex";
+import { ToastContainer, toast } from "react-toastify";
 
 const Publish = () => {
 	const { categories } = useContext(CategoriesContext);
@@ -11,14 +12,18 @@ const Publish = () => {
 		category: 0,
 		region: "",
 	});
-	const [message, setMessage] = useState(null);
 
-	// Validation du formulaire
 	const validateForm = () => {
 		if (!formData.title || !formData.category || !formData.region) {
-			setMessage({
-				type: "error",
-				text: "Tous les champs sont obligatoires.",
+			toast.warning("All fields are required.", {
+				position: "top-center",
+				autoClose: 3500,
+				hideProgressBar: true,
+				closeOnClick: true,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+				theme: "light",
 			});
 			return false;
 		}
@@ -28,14 +33,13 @@ const Publish = () => {
 	const handleOnchange = (e) => {
 		setFormData({ ...formData, [e.target.name]: e.target.value });
 	};
-	// Gestion de l'envoi
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		if (!validateForm()) return;
 
 		try {
-			let lastId = parseInt(posts[posts.length - 1]?.id || 0);
-			console.log(lastId);
+			let lastId = parseInt(posts[posts.length - 1]?.id) || 0;
 
 			const payload = {
 				...formData,
@@ -43,28 +47,26 @@ const Publish = () => {
 				favorite: false,
 				artisanId: 1,
 			};
-			console.log(payload);
 			await axios.post("http://localhost:5001/posts", payload);
 
 			setPosts([...posts, payload]);
 
-			setMessage({
-				type: "success",
-				text: "Œuvre publiée avec succès !",
+			toast.success("Work published successfully!", {
+				position: "top-center",
+				autoClose: 3500,
+				hideProgressBar: true,
+				closeOnClick: true,
+				pauseOnHover: true,
+				draggable: true,
+				progress: undefined,
+				theme: "light",
 			});
-
-			// Reset du formulaire
-			// handleCancel();
+			handleCancel();
 		} catch (error) {
 			console.error(error);
-			setMessage({
-				type: "error",
-				text: "Erreur lors de la publication.",
-			});
 		}
 	};
 
-	// Reset du formulaire
 	const handleCancel = () => {
 		setFormData({
 			title: "",
@@ -113,6 +115,7 @@ const Publish = () => {
 							className='w-full border border-[#d8b98c] rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-[#c35b1f] bg-white shadow-sm'
 						>
 							<option value=''>Select category</option>
+							<hr />
 							{categories?.map((item) => (
 								<option key={item.id} value={item.id}>
 									{item.title}
@@ -183,22 +186,7 @@ const Publish = () => {
 						Cancel
 					</button>
 				</div>
-
-				{/* Notification */}
-				{message && (
-					<div
-						className={`mt-8 p-4 ${
-							message.type === "success"
-								? "text-green-800 bg-green-100 border-green-300"
-								: "text-red-800 bg-red-100 border-red-300"
-						} border rounded-lg text-sm flex items-center gap-2 shadow-sm`}
-					>
-						<span className='text-lg'>
-							{message.type === "success" ? "✅" : "❌"}
-						</span>
-						<span>{message.text}</span>
-					</div>
-				)}
+				<ToastContainer />
 			</div>
 		</div>
 	);

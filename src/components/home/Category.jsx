@@ -8,26 +8,37 @@ import { CategoriesContext } from "../../contexes/categoriesContext";
 // 	{ title: "Tapis", img: "src/assets/category1.jpg" },
 // 	{ title: "Tapis", img: "src/assets/category2.jpeg" },
 // ];
-const Category = () => {
+const Category = ({ place }) => {
 	const { categories } = useContext(CategoriesContext);
 	return (
-		<section
-			className='bg-cover bg-center'
-			// style={{ backgroundImage: `url(/src/assets/zakhrafa.png)` }}
-		>
+		<section className='w-full'>
 			<div className='flex items-center justify-between'>
-				{categories?.map((item) => (
-					<div key={item.id} className='flex flex-col w-[23%] space-x-3'>
-						<div
-							className='bg-white gap-3 border-2 border-amber-600 w-full h-40 bg-cover bg-center rounded-2xl'
-							// className=''
-							style={{ backgroundImage: `url(src/assets/category2.jpeg)` }}
-						></div>
-						<div className='text-center my-2 font-medium text-xl text-[#4C2010]'>
-							{item.title}
+				{place == "home" &&
+					categories?.map((item) => (
+						<div key={item.id} className='flex flex-col w-[23%] space-x-3'>
+							<div
+								className='bg-white gap-3 border-2 border-amber-600 w-full h-40 bg-cover bg-center rounded-2xl'
+								// className=''
+								style={{ backgroundImage: `url(src/assets/category2.jpeg)` }}
+							></div>
+							<div className='text-center my-2 font-medium text-xl text-[#4C2010]'>
+								{item.title}
+							</div>
 						</div>
-					</div>
-				))}
+					))}
+				{place == "admin" &&
+					categories?.map((item) => (
+						<div key={item.id} className='flex flex-col w-[23%] space-x-3'>
+							<div
+								className='bg-white gap-3 border-2 border-amber-600 w-full h-40 bg-cover bg-center rounded-2xl'
+								// className=''
+								style={{ backgroundImage: `url(src/assets/category2.jpeg)` }}
+							></div>
+							<div className='text-center my-2 font-medium text-xl text-[#4C2010]'>
+								{item.title}
+							</div>
+						</div>
+					))}
 			</div>
 		</section>
 	);

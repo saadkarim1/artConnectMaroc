@@ -45,13 +45,18 @@ const Layout = () => {
 					return item;
 				})
 			);
-			console.log("Updated with PATCH:", response.data);
+			console.log("updated :", response.data);
 		} catch (error) {
-			console.error("Error updating with PATCH:", error);
+			console.error("Error updating :", error);
 		}
 	};
+
+	
+
 	return (
-		<PostsContext value={{ posts: posts, setPosts, addOrRemoveFavorite }}>
+		<PostsContext
+			value={{ posts: posts, setPosts, addOrRemoveFavorite }}
+		>
 			<CategoriesContext value={{ categories: categories, setCategories }}>
 				<EventsContext value={{ events: events, setEvents }}>
 					<div className='flex flex-col min-h-screen bg-[#FAF6F0] '>
