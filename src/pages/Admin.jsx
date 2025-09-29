@@ -5,6 +5,8 @@ import FormToAddEvent from "../components/admin/AdminForms/FormToAddEvent";
 import Posts from "../components/Posts";
 import Categories from "../components/categories";
 import Events from "../components/Events";
+import Artisans from "../components/admin/AdminArtisans";
+import FormToAddArtisan from "../components/admin/AdminForms/FormToAddArtisan";
 
 const Admin = () => {
 	const sections = ["artworks", "categories", "events", "artisans"];
@@ -48,12 +50,13 @@ const Admin = () => {
 				{show && main == sections[0] && <FormToAddPost />}
 				{show && main == sections[1] && <FormToAddCategory />}
 				{show && main == sections[2] && <FormToAddEvent />}
-				{show && main === "artisans" && <FormToAddArtisan />}
+				{show && main === sections[3] && <FormToAddArtisan />}
 			</div>
 
 			{main == sections[0] && <Posts place={"admin"} />}
 			{main == sections[1] && <Categories place={"admin"} />}
 			{main == sections[2] && <Events place={"admin"} />}
+			{main == sections[3] && <Artisans place={"admin"} />}
 		</div>
 	);
 };
