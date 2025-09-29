@@ -1,12 +1,10 @@
-import React, { useContext, useState } from "react";
-import Category from "../components/home/Category";
-import ArtWorks from "../components/admin/ArtWorks";
-import Events from "../components/home/Events";
-import LatestAdditions from "../components/home/LatestAdditions";
-import { CategoriesContext } from "../contexes/categoriesContext";
-import FormToAddPost from "../components/admin/FormToAddPost";
-import FormToAddCategory from "../components/admin/FormToAddCategory";
-import FormToAddEvent from "../components/admin/FormToAddEvent";
+import React, { useState } from "react";
+import FormToAddPost from "../components/admin/AdminForms/FormToAddPost";
+import FormToAddCategory from "../components/admin/AdminForms/FormToAddCategory";
+import FormToAddEvent from "../components/admin/AdminForms/FormToAddEvent";
+import Posts from "../components/Posts";
+import Categories from "../components/categories";
+import Events from "../components/Events";
 
 const Admin = () => {
 	const sections = ["artworks", "categories", "events", "artisans"];
@@ -52,9 +50,9 @@ const Admin = () => {
 				{show && main == sections[2] && <FormToAddEvent />}
 			</div>
 
-			{main == sections[0] && <LatestAdditions place={"admin"} />}
-			{main == sections[1] && <Category place={"admin"} />}
-			{main == sections[2] && <Events />}
+			{main == sections[0] && <Posts place={"admin"} />}
+			{main == sections[1] && <Categories place={"admin"} />}
+			{main == sections[2] && <Events place={"admin"} />}
 		</div>
 	);
 };

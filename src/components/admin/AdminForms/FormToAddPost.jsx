@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
-import { CategoriesContext } from "../../contexes/categoriesContext";
+import { CategoriesContext } from "../../../contexes/categoriesContext";
 import axios from "axios";
-import { PostsContext } from "../../contexes/postsContex";
+import { PostsContext } from "../../../contexes/postsContex";
 import { ToastContainer, toast } from "react-toastify";
 
 const FormToAddPost = () => {
@@ -52,10 +52,10 @@ const FormToAddPost = () => {
 
 			setPosts([...posts, payload]);
 
-			toast.success("Work published successfully!", {
-				position: "top-right",
+			toast.success("work published successfully!", {
+				position: "top-center",
 				autoClose: 3500,
-				hideProgressBar: false,
+				hideProgressBar: true,
 				closeOnClick: true,
 				pauseOnHover: true,
 				draggable: true,
@@ -128,9 +128,14 @@ const FormToAddPost = () => {
 						className='w-full border border-[#d8b98c] rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#c35b1f] bg-white shadow-sm'
 					/>
 				</div>
-				<button type='submit'>add</button>
-				<ToastContainer />
+				<button
+					type='submit'
+					className='bg-[#c35b1f] text-white p-2 rounded-lg mt-1 cursor-pointer'
+				>
+					add
+				</button>
 			</form>
+			<ToastContainer />
 		</div>
 	);
 };

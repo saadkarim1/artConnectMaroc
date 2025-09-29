@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useContext, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import { CategoriesContext } from "../../contexes/categoriesContext";
+import { CategoriesContext } from "../../../contexes/categoriesContext";
 
 const FormToAddCategory = () => {
 	const [title, setTitle] = useState("");
@@ -32,6 +32,7 @@ const FormToAddCategory = () => {
 			);
 			setCategories([...categories, payload]);
 			console.log("adding category :", response.data);
+			setTitle("")
 		} catch (error) {}
 	};
 	return (
@@ -50,7 +51,12 @@ const FormToAddCategory = () => {
 						className='w-full border border-[#d8b98c] rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-[#c35b1f] bg-white shadow-sm'
 					/>
 				</div>
-				<button type='submit'>add</button>
+				<button
+					type='submit'
+					className='bg-[#c35b1f] text-white p-2 rounded-lg mt-1 cursor-pointer'
+				>
+					add
+				</button>
 			</form>
 			<ToastContainer />
 		</div>

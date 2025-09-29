@@ -25,14 +25,6 @@
     {
       "id": "4",
       "title": "crafts"
-    },
-    {
-      "id": "5",
-      "title": "saad"
-    },
-    {
-      "id": "6",
-      "title": "blabla"
     }
   ],
   "events": [
@@ -62,28 +54,20 @@
       "artisanId": 1
     },
     {
-      "id": "3",
-      "title": "jjj",
-      "categoryId": 1,
-      "region": "casablanca",
-      "favorite": false,
-      "artisanId": 1
-    },
-    {
+      "artisanId": 1,
+      "category": "3",
+      "favorite": true,
       "id": "4",
-      "title": "jjj",
-      "categoryId": 1,
       "region": "casablanca",
-      "favorite": true,
-      "artisanId": 1
+      "title": "zak"
     },
     {
-      "id": "5",
-      "title": "jjj",
-      "categoryId": 1,
-      "region": "casablanca",
+      "artisanId": 1,
+      "category": "2",
       "favorite": true,
-      "artisanId": 1
+      "id": "5",
+      "region": "casablanca",
+      "title": "houssam"
     },
     {
       "id": "6",
@@ -94,12 +78,12 @@
       "artisanId": 1
     },
     {
-      "id": "7",
-      "title": "ceramic",
+      "artisanId": 1,
       "category": "2",
-      "region": "tawjtate",
       "favorite": false,
-      "artisanId": 1
+      "id": "7",
+      "region": "tawjtate",
+      "title": "salwa"
     },
     {
       "id": "8",
@@ -146,7 +130,7 @@
       "title": "ww",
       "category": "2",
       "region": "fddsfd",
-      "favorite": false,
+      "favorite": true,
       "artisanId": 1
     },
     {
@@ -162,7 +146,7 @@
       "title": "psss",
       "category": "2",
       "region": "pp",
-      "favorite": false,
+      "favorite": true,
       "artisanId": 1
     },
     {
@@ -178,7 +162,55 @@
       "title": "naynay",
       "category": "3",
       "region": "kk",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "18",
+      "title": "kkk",
+      "category": "2",
+      "region": "kk",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "19",
+      "title": "hohoz",
+      "category": "2",
+      "region": "kkk",
       "favorite": true,
+      "artisanId": 1
+    },
+    {
+      "id": "20",
+      "title": "yoyo",
+      "category": "2",
+      "region": "hh",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "21",
+      "title": "yaya",
+      "category": "2",
+      "region": "kk",
+      "favorite": true,
+      "artisanId": 1
+    },
+    {
+      "id": "22",
+      "title": "nono",
+      "category": "1",
+      "region": "kkk",
+      "favorite": false,
+      "artisanId": 1
+    },
+    {
+      "id": "23",
+      "title": "nini",
+      "category": "2",
+      "region": "kk",
+      "favorite": false,
       "artisanId": 1
     }
   ]
