@@ -48,6 +48,7 @@ const Admin = () => {
 				{show && main == sections[0] && <FormToAddPost />}
 				{show && main == sections[1] && <FormToAddCategory />}
 				{show && main == sections[2] && <FormToAddEvent />}
+				{show && main === "artisans" && <FormToAddArtisan />}
 			</div>
 
 			{main == sections[0] && <Posts place={"admin"} />}
