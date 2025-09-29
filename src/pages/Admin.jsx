@@ -7,6 +7,8 @@ import { CategoriesContext } from "../contexes/categoriesContext";
 import FormToAddPost from "../components/admin/FormToAddPost";
 import FormToAddCategory from "../components/admin/FormToAddCategory";
 import FormToAddEvent from "../components/admin/FormToAddEvent";
+import FormToAddArtisan from "../components/admin/FormToAddArtisan";
+import Artisans from "../components/home/Artisans";
 
 const Admin = () => {
 	const sections = ["artworks", "categories", "events", "artisans"];
@@ -50,11 +52,13 @@ const Admin = () => {
 				{show && main == sections[0] && <FormToAddPost />}
 				{show && main == sections[1] && <FormToAddCategory />}
 				{show && main == sections[2] && <FormToAddEvent />}
+				 {show && main === "artisans" && <FormToAddArtisan />}
 			</div>
 
 			{main == sections[0] && <LatestAdditions place={"admin"} />}
 			{main == sections[1] && <Category place={"admin"} />}
 			{main == sections[2] && <Events />}
+			{main === "artisans" && <Artisans place={"admin"}  />}
 		</div>
 	);
 };

@@ -141,7 +141,7 @@ const Publish = () => {
 
 					{/* Image Upload  */}
 
-					{/* <div>
+					<div>
             <label className='block text-sm font-semibold text-[#4C2010] mb-2'>
               Image
             </label>
@@ -166,7 +166,7 @@ const Publish = () => {
               </p>
             </div>
           </div>
-           */}
+         
 				</form>
 
 				{/* Buttons */}

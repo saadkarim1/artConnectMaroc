@@ -1,12 +1,16 @@
 {
   "artisans": [
     {
-      "id": "1",
-      "name": "Saad"
+      "name": "Saad",
+      "id": "1"
     },
     {
-      "id": "2",
-      "name": "Karim"
+      "name": "Karim",
+      "id": "2"
+    },
+    {
+      "name": "LLATIFA",
+      "id": "6bce"
     }
   ],
   "categories": [
@@ -15,8 +19,8 @@
       "title": "carpets"
     },
     {
-      "id": "2",
-      "title": "zellige"
+      "title": "zellige",
+      "id": "2"
     },
     {
       "id": "3",
@@ -32,7 +36,7 @@
     },
     {
       "id": "6",
-      "title": "blabla"
+      "title": "tapis"
     }
   ],
   "events": [
@@ -67,14 +71,6 @@
       "categoryId": 1,
       "region": "casablanca",
       "favorite": false,
-      "artisanId": 1
-    },
-    {
-      "id": "4",
-      "title": "jjj",
-      "categoryId": 1,
-      "region": "casablanca",
-      "favorite": true,
       "artisanId": 1
     },
     {
@@ -179,6 +175,14 @@
       "category": "3",
       "region": "kk",
       "favorite": true,
+      "artisanId": 1
+    },
+    {
+      "id": "18",
+      "title": "Tapis",
+      "category": "6",
+      "region": "ourzazate",
+      "favorite": false,
       "artisanId": 1
     }
   ]
